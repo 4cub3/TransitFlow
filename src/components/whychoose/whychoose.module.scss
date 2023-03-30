@@ -36,7 +36,7 @@
             @include screenSize($bp-large){
                 color: #fff !important;   
                 }
-
+            
         @include title;
 
         background-image: url('../../store/images/Pattern.svg');
@@ -62,9 +62,9 @@
         flex: 0 0 50%;
 
         & p{
-            font-size: 1.6rem;
             margin-left: 1.8rem;
-            font-weight: 600;
+            font-weight: 400;
+            font-size: 2.2rem;
             line-height: 3rem;
             color: $primary-color-2;
             @include screenSize($bp-large){
