@@ -4,7 +4,10 @@
     background-image: url('../../store/images/Photo.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
     height: 85vh;
+    max-height: 80rem;
     width: 100%;
     
     & article{

@@ -4,11 +4,12 @@ import WhyChooseImage from "./WhyChooseImage";
 import aeroplane from "../../store/images/aeroplane0.png";
 import Label from "../../shared/label/Label";
 import Card from "../../shared/layout/card/Card";
+import Container from "../../shared/layout/container/Container";
 function WhyChoose() {
   return (
     <main className={classes["why-choose"]}>
+    <Container className={classes['control-width']}>
       <WhyChooseImage image={aeroplane} />
-
       <Card>
         <article>
           <Label>Why Choose</Label>
@@ -361,6 +362,7 @@ function WhyChoose() {
           </div>
         </article>
       </Card>
+      </Container>
     </main>
   );
 }
