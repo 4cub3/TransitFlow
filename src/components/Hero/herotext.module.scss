@@ -1,5 +1,12 @@
+@import '../../base/variables.scss';
 @import '../../base/mixins.scss';
 
 .primary{
     @include btnPrimary;
+}
+.hero{
+    & p{
+    background-color:rgba( $primary-color-2 , .2) !important;
+    color: #fff !important;
+    }
 }

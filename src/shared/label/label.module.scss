@@ -1,10 +1,13 @@
 @import '../../base/variables.scss';
 .label {
-    background-color: rgba($color: $primary-color-2, $alpha: 0.3);
+    background-image: linear-gradient(to left, transparent,transparent, transparent,  transparent, rgba($color: $heading-font-color, $alpha: 0.05));
     padding: .8rem 1.8rem;
-    color: $secomdary-color;
+    color: $primary-color-2;
     position: relative;
     overflow: hidden;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 600;
     &::before{
         content: '';
         position: absolute;
