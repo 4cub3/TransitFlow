@@ -24,6 +24,10 @@
       @include screenSize($bp-xmd) {
         flex: 0 0 100%;
       }
+
+      & p{
+        color: #fff !important;
+      }
       & h2 {
         font-size: $heading-lg;
         margin: 1rem 0;
