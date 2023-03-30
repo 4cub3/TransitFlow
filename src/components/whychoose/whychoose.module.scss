@@ -2,7 +2,7 @@
 @import '../../base/mixins.scss';
 .why-choose{
     background-color:$primary-color-2 ;
-    padding: 12rem;
+    padding: 12rem 7rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@
                 }
 
         @include title;
-        
+
         background-image: url('../../store/images/Pattern.svg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -63,8 +63,8 @@
 
         & p{
             font-size: 1.6rem;
-            margin-left: 1.5rem;
-            font-weight: 400;
+            margin-left: 1.8rem;
+            font-weight: 600;
             line-height: 3rem;
             color: $primary-color-2;
             @include screenSize($bp-large){

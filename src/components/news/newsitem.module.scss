@@ -4,6 +4,9 @@
 .newsItem{
     display: flex;
     justify-content: space-between;
+    &:not(:last-child){
+        border-bottom: 1px solid #ccc;
+    }
     @include screenSize($bp-md){
    flex-wrap: wrap;
         }

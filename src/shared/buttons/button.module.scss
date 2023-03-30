@@ -25,12 +25,12 @@
     &::after{
         content: "";
         position: absolute;
-        bottom: -3rem;
+        bottom: -4rem;
         right: -4rem;
         width: 7rem;
         height: 7rem;
         border-radius: 50%;
-        background-color:  rgba($secomdary-color, .8);
+        background-color:  rgba($secomdary-color, .6);
         transition: all .2s ease;
     }
     &:hover::after{

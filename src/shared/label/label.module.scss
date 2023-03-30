@@ -1,6 +1,6 @@
 @import '../../base/variables.scss';
 .label {
-    background-image: linear-gradient(to left, transparent,transparent, transparent,  transparent, rgba($color: $heading-font-color, $alpha: 0.05));
+    background-image: linear-gradient(to left, transparent, rgba($color: $heading-font-color, $alpha: 0.07));
     padding: .8rem 1.8rem;
     color: $primary-color-2;
     position: relative;

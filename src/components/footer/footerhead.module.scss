@@ -1,7 +1,7 @@
 @import '../../base/variables.scss';
 @import '../../base/mixins.scss';
 .footer-head{
-    background-color: $heading-font-color;
+    background-color: #1c2551;
     // padding: 3rem 0;
     @include screenSize($bp-xmd){
         display: none;

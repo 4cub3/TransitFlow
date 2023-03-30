@@ -29,6 +29,12 @@
         background-color: $heading-font-color;
         color: $secomdary-color;
         z-index: -1;
+
+        & dt{
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+       
     }
 }
 .socials{

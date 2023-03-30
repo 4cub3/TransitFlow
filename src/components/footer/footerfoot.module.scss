@@ -17,7 +17,8 @@
             margin: 0 1rem ;
 
             & a{
-                color: $secomdary-color;
+                font-size: 1.5rem;
+                color:rgba( $secomdary-color, .3);
             }
         }
     }
