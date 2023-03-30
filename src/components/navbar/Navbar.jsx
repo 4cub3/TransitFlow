@@ -11,12 +11,12 @@ function Navbar() {
         <nav>
           <ul>
             <li>
-              <NavLink activeClassName="active" to="/">
+              <NavLink activeClassName={classes.active}  to="/">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName="active" to="/">
+              <NavLink activeClassName="active"to="/">
                 About
               </NavLink>
             </li>

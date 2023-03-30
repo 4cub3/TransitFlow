@@ -34,6 +34,11 @@
             @include screenSize($bp-large){
                 color: #fff !important;   
                 }
+                & p{
+                    @include screenSize($bp-large){
+                        color: #fff !important;   
+                        }
+                }
             
         @include title;
 
@@ -53,6 +58,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 2rem 0;
+
+    
     & div{
         display: flex;
         align-items: center;
@@ -76,7 +83,9 @@
 .control-width{
     max-width: 160rem;
     display: flex;
-   
     display: flex;
     align-items: center;
+    @include screenSize($bp-large){
+        flex-direction: column;
+     }
 }

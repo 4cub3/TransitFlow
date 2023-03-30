@@ -42,7 +42,7 @@ function GetInTouch() {
       <Card>
         <Container>
           <article>
-            <Label>contact</Label>
+            <Label>Contact</Label>
             <h2>Get in touch with us</h2>
             <p>
               Leverage agile frameworks to provide a robust synopsis for
