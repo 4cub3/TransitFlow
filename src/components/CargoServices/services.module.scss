@@ -21,11 +21,11 @@
                 margin:3rem 0 ;
             }
             & > p{
-                background-color: rgba($primary-color-2, 0.1) !important;
+                // background-color: rgba($primary-color-2, 0.1) !important;
                 color:$primary-color-2 !important;
                 margin-bottom: 2rem;
                 align-self: flex-start;
-                color: $paragraph-font-color;
+
             }
             & h2{
                 font-size: $heading-lg;
