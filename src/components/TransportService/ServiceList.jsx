@@ -13,7 +13,7 @@ import SHIP from "../../store/images/ship.png";
 function ServiceList() {
   return (
     <main className={classes["transports"]}>
-      <Container>
+      <Container >
         <h2 className={classes.heading}>Transporting Across The World</h2>
         <Card className={classes["transport-cards"]}>
           <ServiceItem

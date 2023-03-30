@@ -5,6 +5,7 @@
     padding: 12rem;
     position: relative;
     display: flex;
+    align-items: center;
     @include screenSize($bp-large){
         flex-wrap: wrap;
         padding: 4rem;
