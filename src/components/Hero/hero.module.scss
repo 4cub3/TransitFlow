@@ -1,0 +1,40 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.hero{
+    background-image: url('../../store/images/Photo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100%;
+    
+    & article{
+            flex: 0 0 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @include screenSize($bp-md){
+                flex: 0 0 100%;
+            }
+    }
+
+    & h1{
+        font-size: $heading-xxxl;
+        line-height: 7.1rem;
+        color: $secomdary-color;
+        margin: 1rem 0;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    & p:last-of-type{
+        color: $secomdary-color;
+        line-height: 151.52%;
+        font-family: 'Krub',sans-serif;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
+.snap-left{
+    display: flex;
+    align-items: center;
+    height: 89%;
+}

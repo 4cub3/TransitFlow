@@ -1,0 +1,53 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+
+
+.btn{
+    padding:1.5rem 4rem;
+    font-family: 'krub',sans-serif;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &.btn-primary{
+        background-image: $gradient;
+        color:$primary-color-2;
+    }
+    &.btn-secondary{
+        background-image: $primary-color-2 !important;
+        color:$secomdary-color !important;
+    }
+
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -2.5rem;
+        right: -3rem;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-color:  rgba($secomdary-color, .4);
+        transition: all .2s ease;
+    }
+    &:hover::after{
+        content: "";
+        position: absolute;
+        bottom: -2.8rem;
+        right: -2rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: rgba($secomdary-color, .2);
+        transition: all .2s ease;
+    }
+    &:disabled{
+        cursor: not-allowed;
+        background-color: rgba($primary-color-2, 0.5);
+    }
+
+    
+}

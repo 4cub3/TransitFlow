@@ -1,0 +1,78 @@
+@import "../../base/variables.scss";
+.testimonials-card {
+  padding: 6rem;
+  background-color: $secomdary-color;
+
+  &:nth-child(even) {
+    background-color: $primary-color-2 !important;
+    color: $secomdary-color;
+  }
+  & div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & figure {
+      flex: 0 0 70%;
+      display: flex;
+      align-items: center;
+
+      & div {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 2rem;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      & figcaption {
+        flex: 0 0 70%;
+
+        & h3 {
+          font-size: 2rem;
+        }
+        & p {
+          width: 100%;
+          font-size: 1.6rem;
+          font-family: "krub", sans-serif;
+          font-weight: 500;
+        }
+      }
+    }
+
+    & span {
+      background-image: $gradient;
+      color: $primary-color-2;
+      width: 6rem;
+      height: 6rem;
+      line-height: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $heading-sm;
+    }
+  }
+}
+
+.customer-testimonial {
+  margin: 3rem 0;
+
+  font-family: "Krub";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 151.52%;
+}
+.customer-rating{
+  color:$primary-color;
+  font-size: $heading-md-sm;
+  & svg:not(:first-child){
+    margin-left: .4rem;
+  }
+}

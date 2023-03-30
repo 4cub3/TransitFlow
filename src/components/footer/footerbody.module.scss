@@ -1,0 +1,14 @@
+
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.footer-body{
+    background-color: $primary-color-2;
+    & div{
+    display: flex;
+    justify-content: space-between;
+
+    @include screenSize($bp-large){
+        flex-wrap: wrap;
+        }
+    }
+}

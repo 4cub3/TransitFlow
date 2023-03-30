@@ -1,0 +1,23 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.pages{
+    list-style: none;
+    color:$secomdary-color ;
+    flex: 0 0 25%;
+    padding:0  10rem;
+    @include screenSize($bp-large){
+        
+        padding: 5rem;
+        }
+    @include screenSize($bp-md){
+        flex: 0 0 100%;
+        padding: 0;
+        }
+    & li{
+        margin:2rem 0;
+
+        & a{
+        color: $secomdary-color;
+        }
+    }
+}

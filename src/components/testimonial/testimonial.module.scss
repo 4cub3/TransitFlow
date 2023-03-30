@@ -1,0 +1,27 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.testimonial{
+    padding: 6rem 0;
+    & > section{
+
+        & > div{
+            
+
+            & p{
+                width: 10%;
+                @include screenSize($bp-md){
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+.testimonials{
+    display: flex;
+    align-items: center;
+    
+    @include screenSize($bp-md){
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../base/variables.scss';
+.label {
+    background-color: rgba($color: $primary-color-2, $alpha: 0.3);
+    padding: .8rem 1.8rem;
+    color: $secomdary-color;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: .6rem;
+        background-color: $primary-color;
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.team{
+    flex: 0 0 30%;
+    position: relative;
+
+    @include screenSize($bp-md){
+        flex: 0 0 45%;
+        margin: 1rem;
+        }
+
+        @include screenSize($bp-xsm){
+            flex:0 0 100%;
+            }
+    & figure{
+        width: 100%;
+        height: 35rem;
+        overflow: hidden;
+        & img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    & dl{
+        width: 100%;
+        padding: 4rem;
+        background-color: $heading-font-color;
+        color: $secomdary-color;
+        z-index: -1;
+    }
+}
+.socials{
+    position: absolute;
+    right: 0;
+    bottom: 9rem;
+    background-image:$gradient ;
+    color: $primary-color-2;
+    display: flex;
+    align-items: center;
+    // width: 35%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+
+    & svg{
+        color: $primary-color-2;
+        margin: 0 1rem;
+        fill: #1c1f35 !important;
+    }
+}

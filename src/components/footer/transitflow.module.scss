@@ -1,0 +1,36 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.brand-contact{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    & div{
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        flex-wrap: wrap;
+    }
+    & ul{
+        list-style: none;
+        margin-left: 1rem;
+        color: $secomdary-color;
+        line-height: 135.02%;
+        font-size: 1.4rem;
+    }
+}
+.transit{
+    flex: 0 0 25%;
+    color: $secomdary-color ;
+    padding: 0 2rem;
+    @include screenSize($bp-md){
+        flex: 0 0 100%;
+        padding: 0;
+        }
+    & p{
+        line-height: 151.52%;
+        font-family: 'Krub',sans-serif;
+        font-weight: 400;
+        color: $secomdary-color;
+        margin: 2rem 0;
+    }
+}

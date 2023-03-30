@@ -1,0 +1,24 @@
+@import '../../base/variables.scss';
+.foot{
+        background-color: $primary-color-2;
+        border-top: 1px solid rgba($secomdary-color,.3);
+        color: $secomdary-color;
+
+    & div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    & ul{
+        list-style: none;
+        display: flex;
+        
+        & li{
+            margin: 0 1rem ;
+
+            & a{
+                color: $secomdary-color;
+            }
+        }
+    }
+}

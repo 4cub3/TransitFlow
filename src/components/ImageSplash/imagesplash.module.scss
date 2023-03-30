@@ -1,0 +1,26 @@
+@import '../../base/variables.scss';
+.cargo-image, .cargo-image2{
+    
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba($primary-color-2, 0.7), transparent);
+    }
+}
+.cargo-image2{
+    background-image:url('../../store/images/shipDock.png') ;
+    height: 40vh !important;
+}
+.cargo-image{
+    background-image:url('../../store/images/carg.png') ;
+}

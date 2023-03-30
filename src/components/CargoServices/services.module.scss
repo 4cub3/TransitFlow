@@ -1,0 +1,83 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.services{
+    padding: 8rem 0;
+
+    & > div{
+        display: flex;
+        justify-content: space-between;
+        @include screenSize($bp-md){
+            flex-wrap: wrap;
+        }
+        & > section:first-child{
+            flex: 0 0 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 !important;
+
+            @include screenSize($bp-md){
+                flex: 0 0 100%;
+                text-align: center;
+                margin:3rem 0 ;
+            }
+            & > p{
+                background-color: rgba($primary-color-2, 0.1) !important;
+                color:$primary-color-2 !important;
+                margin-bottom: 2rem;
+                align-self: flex-start;
+                color: $paragraph-font-color;
+            }
+            & h2{
+                font-size: $heading-lg;
+                color:$primary-color-2;
+            }
+        }
+
+        & > section:last-child {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 0 !important;
+
+
+                @include screenSize($bp-md){
+                    flex-wrap: wrap;
+                }
+            & div{
+            flex: 0 0 45%;
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+
+            @include screenSize($bp-md){
+                flex: 0 0 100%;
+                margin-left: 0;
+            }
+
+            & svg{
+                flex:0 0 30%;
+                
+            }
+
+            & article{
+                margin-left: 1rem;
+                border-left:1px solid #ccc;
+                padding-left: 1rem;
+                
+
+                & h3{
+                    font-size: $heading-sm;
+                    line-height: 3rem;
+                    color: $primary-color-2;
+                }
+                & p{
+                    line-height: 151.52%;
+                    font-family: 'Krub',sans-serif;
+                    font-weight: 400;
+                    color: $paragraph-font-color;
+                }
+            }
+            }
+        }
+    }
+}

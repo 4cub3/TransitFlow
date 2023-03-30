@@ -1,0 +1,49 @@
+@import "../../base/variables.scss";
+@import "../../base/mixins.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include screenSize($bp-sm){
+    display: none;
+}
+}
+
+
+.brand-contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  & div {
+    display: flex;
+    align-items: center;
+    // margin-left: 3rem;
+    flex-wrap: wrap;
+    margin: 2rem 0 2rem 3rem;
+  }
+  & ul {
+    list-style: none;
+    margin-left: 1rem;
+    color: $secomdary-color;
+    line-height: 135.02%;
+    font-size: 1.4rem;
+  }
+}
+
+.color {
+  background-color: $primary-color-2;
+  padding: 4rem !important;
+}
+
+
+.brand-logo {
+  flex: 0 0 15%;
+  margin: 2rem 0;
+
+  & img {
+    width: 100%;
+  }
+}

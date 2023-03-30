@@ -1,0 +1,48 @@
+@import "../../base/variables.scss";
+@import "../../base/mixins.scss";
+.form-main {
+  flex: 0 0 60%;
+  @include screenSize($bp-xmd){
+    flex: 0 0 100%;
+    }
+  & textarea {
+    resize: none;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba($secomdary-color, 0.3);
+    margin: 1rem 0;
+    padding: 1.6rem;
+    color: #fff;
+    &::placeholder{
+        color: #fff;
+        font-family: 'League Spartan', sans-serif;
+    }
+  }
+}
+.form-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  & input {
+    background-color: transparent;
+    border: 1px solid rgba($secomdary-color, 0.3);
+    flex:0 0 47%;
+    padding: 1.6rem;
+    margin: 1rem 0;
+    color: #fff;
+    @include screenSize($bp-sm){
+      flex: 0 0 100%;
+      }
+    &::placeholder{
+        color: #fff;
+        font-family: 'League Spartan', sans-serif;
+    }
+  }
+}
+
+.primary{
+    background-color: $primary-color;
+    color: $primary-color-2;
+    margin: 1rem 0;
+}

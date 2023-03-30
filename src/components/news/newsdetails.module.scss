@@ -1,0 +1,36 @@
+@import "../../base/variables.scss";
+@import "../../base/mixins.scss";
+.newsDetails {
+  flex: 0 0 40%;
+  padding-left: 3rem;
+  border-left: 1px solid #ccc;
+  @include screenSize($bp-md) {
+    flex: 0 0 100%;
+
+  
+    border-left: none;
+    margin-bottom: 1rem;
+  }
+  & h2 {
+    font-size: $heading-md-sm;
+    & a {
+      color: $heading-font-color;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  & p {
+    line-height: 151.52%;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    color: $paragraph-font-color;
+    margin: 2rem 0;
+  }
+  & li {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}

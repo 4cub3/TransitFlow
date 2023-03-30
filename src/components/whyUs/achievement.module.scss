@@ -1,0 +1,34 @@
+@import '../../base/variables.scss';    
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import '../../base/mixins.scss';
+
+.delivered-package, .delivered-package ~ div{
+    display: flex;
+    align-items: center;
+    @include screenSize($bp-md){
+        flex-wrap: wrap;
+    }
+
+    & span{
+        font-weight: 600;
+        line-height: 5.9rem;
+        font-size: $heading-md;
+        color: $primary-color-2;
+    }
+    & p{
+        font-family: 'League Spartan', sans-serif;
+        font-size: $heading-md-sm;
+        position: relative;
+        margin-left: 5rem;
+        &::after{
+            content: '';
+            position: absolute;
+            left: -3rem;
+            top :0;
+            height: 100%;
+            width: 2rem;
+           
+            background-image: $gradient;
+        }
+    }
+}

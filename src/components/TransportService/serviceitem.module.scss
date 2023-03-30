@@ -1,0 +1,54 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.transportation{
+    max-width: 32rem;
+    max-height:40.7rem;
+    position: relative;    
+    @include screenSize($bp-md){
+        flex: 0 0 100%;
+        margin: 2rem 0 !important;
+        max-width: 100%;
+    }
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+    & figure{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: $over-shadow;
+        }
+        
+        & img{
+            width: 100%;
+        }
+    }
+
+    & dl{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        
+        & dt{
+            color: $secomdary-color;
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+        & dd{
+            font-family: 'Krub',sans-serif;
+            font-weight: 500;
+            color: $primary-color;
+            font-size: 1rem;
+        }
+    }
+   
+}

@@ -1,0 +1,33 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.expert-team{
+    padding: 6rem 0;
+    @include screenSize($bp-md){
+        padding: 3rem 0;
+        }
+    & > section{
+        
+        & > div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include screenSize($bp-md){
+                flex-wrap: wrap
+                }
+            & h2{
+                @include heading;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+
+.teams{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include screenSize($bp-md){
+        flex-wrap: wrap;
+        }
+}

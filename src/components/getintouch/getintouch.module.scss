@@ -1,0 +1,70 @@
+@import "../../base/variables.scss";
+@import "../../base/mixins.scss";
+
+.getintouch {
+  background-color: $primary-color-2;
+  & section {
+    z-index: 4;
+    // flex: 0 0 40%;
+    padding: 10rem;
+
+    @include screenSize($bp-md) {
+      padding: 4rem;
+    }
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include screenSize($bp-md) {
+        flex-wrap: wrap;
+      }
+    }
+    & article {
+      flex: 0 0 30%;
+      @include screenSize($bp-xmd) {
+        flex: 0 0 100%;
+      }
+      & h2 {
+        font-size: $heading-lg;
+        margin: 1rem 0;
+        color: $secomdary-color;
+      }
+
+      & > p:last-of-type {
+        line-height: 151.52%;
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        color: $secomdary-color;
+      }
+    }
+  }
+}
+
+.brand-contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  & div {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  & ul {
+    list-style: none;
+    margin-left: 1rem;
+    color: $secomdary-color;
+    line-height: 135.02%;
+    font-size: 1.4rem;
+  }
+}
+
+.images{
+  margin-top: 6rem;
+  @include screenSize($bp-md) {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+  }
+}

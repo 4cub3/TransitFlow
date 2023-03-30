@@ -1,0 +1,34 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+.footer-head{
+    background-color: $heading-font-color;
+    // padding: 3rem 0;
+    @include screenSize($bp-xmd){
+        display: none;
+        }
+    & ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $secomdary-color;
+        font-weight:500;
+        line-height: 3rem;
+        font-size: 2.5rem;
+       
+        & li{
+            flex: 0 0 25%;
+            padding: 4rem;
+            &:not(:first-child){
+            padding:0  10rem;
+            }
+        }
+        & li:first-child{
+         background-color: $primary-color-2;
+
+            & img{
+                width: 100%;
+            }
+        }
+    }
+}

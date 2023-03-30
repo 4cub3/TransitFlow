@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+@mixin title{
+  flex: 0 0 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 !important;
+
+            & > p:first-child{
+              background-color: rgba($primary-color-2, 0.1) ;
+              margin-bottom: 2rem;
+              align-self: flex-start;
+              // color: $paragraph-font-color ;
+          }
+          & h2{
+              font-size: $heading-lg;
+              margin: 1rem 0;
+              // color: $primary-color-2;
+          }
+
+          & > p:last-of-type{
+            line-height: 151.52%;
+                    font-family: 'Krub',sans-serif;
+                    font-weight: 400;
+                    // color: $paragraph-font-color;
+          } 
+}
+
+@mixin heading{
+  font-size: $heading-md;
+  margin: 1rem 0;
+  color: $primary-color-2;
+}
+
+@mixin btnPrimary{
+  background-image: $gradient !important;
+  color: $primary-color-2 !important;
+}
+@mixin btnSecondary{
+  background-color: $primary-color-2;
+  color: $secomdary-color;
+}
+
+@mixin screenSize($breakPoint){
+  @media only screen and (max-width:$breakPoint){@content};
+}

@@ -1,0 +1,47 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+
+.transports{
+    position: relative;
+    overflow: hidden;
+    margin-top: 50rem;
+    padding:0 0 8rem 0;
+    @include screenSize($bp-md){
+        margin-top: 100rem;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-image: $gradient;
+        z-index: -1;
+    }
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    & button{
+        background-color: $primary-color-2 !important;
+        color: $secomdary-color;
+    }
+}
+.heading{
+    @include heading;
+    text-align: center;
+}
+
+.transport-cards{
+display: flex;
+margin-bottom: 4rem;
+@include screenSize($bp-md){
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+}

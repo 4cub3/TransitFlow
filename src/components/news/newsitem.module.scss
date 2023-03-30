@@ -1,0 +1,10 @@
+@import '../../base/variables.scss';
+@import '../../base/mixins.scss';
+
+.newsItem{
+    display: flex;
+    justify-content: space-between;
+    @include screenSize($bp-md){
+   flex-wrap: wrap;
+        }
+}
