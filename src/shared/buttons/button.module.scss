@@ -25,12 +25,12 @@
     &::after{
         content: "";
         position: absolute;
-        bottom: -2.5rem;
-        right: -3rem;
-        width: 6rem;
-        height: 6rem;
+        bottom: -3rem;
+        right: -4rem;
+        width: 7rem;
+        height: 7rem;
         border-radius: 50%;
-        background-color:  rgba($secomdary-color, .4);
+        background-color:  rgba($secomdary-color, .8);
         transition: all .2s ease;
     }
     &:hover::after{
@@ -41,7 +41,7 @@
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
-        background-color: rgba($secomdary-color, .2);
+        background-color: rgba($secomdary-color, .4);
         transition: all .2s ease;
     }
     &:disabled{
