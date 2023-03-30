@@ -5,32 +5,36 @@ import Container from "../../shared/layout/container/Container";
 import Label from "../../shared/label/Label";
 import GetInTouchForm from "./GetInTouchForm";
 import GetInTouchImages from "./GetInTouchImages";
+import norto from "../../store/images/Norto.svg";
+import stgreen from "../../store/images/sgreen.svg";
+import point from "../../store/images/point.svg";
+import oot from "../../store/images/oot.svg";
 const GALLERY_IMAGES = [
   {
     id: "0",
     image:
       "https://plus.unsplash.com/premium_photo-1661873184237-a06debd40731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80",
+      logo: stgreen,
   },
   {
     id: "1",
     image:
       "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80",
+      logo: norto,
   },
   {
     id: "2",
     image:
       "https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1678&q=80",
+      logo: point,
   },
   {
     id: "3",
     image:
       "https://images.unsplash.com/photo-1562797807-aa9baed9a414?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80",
+      logo: oot,
   },
-  {
-    id: "4",
-    image:
-      "https://plus.unsplash.com/premium_photo-1661873184237-a06debd40731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80",
-  },
+ 
 ];
 function GetInTouch() {
   return (
@@ -139,7 +143,7 @@ function GetInTouch() {
         </Container>
         <Container className={classes.images}>
           {GALLERY_IMAGES.map((img) => (
-            <GetInTouchImages key={img.id} image={img.image} />
+            <GetInTouchImages key={img.id} logo={img.logo} image={img.image} />
           ))}
         </Container>
       </Card>

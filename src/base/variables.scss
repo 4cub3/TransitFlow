@@ -15,8 +15,8 @@ $heading-md:3rem;
 $heading-md-sm:2.5rem;
 $heading-sm:2rem;
 
-$over-shadow:linear-gradient(to top, rgba(#000000, 0.7), transparent);
-$over-shadow2:linear-gradient(to top, rgba(#000000, 1), transparent);
+$over-shadow:linear-gradient(to top, rgba($primary-color-2, 0.8), transparent);
+$over-shadow2:linear-gradient(to top, rgba($primary-color-2, 0.95), transparent);
 
 $bp-largest:75em; //1200px
 $bp-large: 72.3125em;
