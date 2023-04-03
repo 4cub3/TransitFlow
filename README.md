@@ -1,4 +1,4 @@
-[(https://transitflow4cub3.netlify.app/)]
+[https://transitflow4cub3.netlify.app/]
 
 Transitflow is a branding that helps in the importation and exportattion of cargos(goods)
 
